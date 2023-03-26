@@ -43,60 +43,57 @@
       margin: 20px;
     }
   </style>
+  <style>
+    .demo {
+      color: white;
+      border: 1px solid #666;
+      min-height: 50px;
+    }
+
+    .sider {
+      background: lightskyblue;
+      width: 150px;
+    }
+
+    .sider.slide-enter, .sider.slide-leave-to {
+      margin-left: -150px;
+    }
+
+    .header {
+      background: lightskyblue;
+      height: 100px;
+    }
+
+    .footer {
+      background: deepskyblue;
+      height: 50px;
+    }
+
+  </style>
 </head>
 <body>
-<div id="app">
-  <div>
-    <g-row gutter="20">
-      <g-col></g-col>
-      <g-col></g-col>
-    </g-row>
-    <g-row gutter="30">
-      <g-col span="8" >2</g-col>
-      <g-col span="6">2</g-col>
-      <g-col span="10">22</g-col>
-    </g-row>
-    <g-row>
-      <g-col span="10"></g-col>
-      <g-col span="8" offset="2" ></g-col>
-      <g-col span="4"></g-col>
-    </g-row>
-    <g-row>
-      <g-col></g-col>
-      <g-col></g-col>
-      <g-col></g-col>
-      <g-col></g-col>
-    </g-row>
-  </div>
-  <div class="box">
-    <div class="box">
-      <g-input  v-model="message"></g-input>
-      <g-input  v-model="message"></g-input>
-      <g-input value="李四" disabled></g-input>
-      <g-input value="王五" readonly></g-input>
-    </div>
-    <div class="box">
-      <g-input  error="姓名不能少于5个字"></g-input>
-    </div>
-    <div>
-      <g-button :loading="loading1" @click="loading1 = !loading1">
-        按钮1
-      </g-button>
-      <g-button :loading="loading1" icon="settings" icon-position="left">
-        按钮2
-      </g-button>
-      <g-button :loading="loading1" icon="left" icon-position="right">
-        按钮3
-      </g-button>
-      <g-button-group>
-        <g-button icon="left">上一页</g-button>
-        <g-button>中间</g-button>
-        <g-button icon="right">下一页</g-button>
-      </g-button-group>
-    </div>
-  </div>
-
-  <!--<script src="//at.alicdn.com/t/c/font_3960110_8bsu48em3y.js"></script>-->
+<div id="app" style="padding-top: 50px;padding-left:50px;">
+  <g-collapse>
+    <g-collapse-item title="标题一" name="1">内容1</g-collapse-item>
+    <g-collapse-item title="标题二" name="1">内容1</g-collapse-item>
+    <g-collapse-item title="标题三" name="1">内容1</g-collapse-item>
+  </g-collapse>
+<!--  <g-layout>-->
+<!--    <g-sider></g-sider>-->
+<!--    <g-layout>-->
+<!--      <g-header class="demo">header</g-header>-->
+<!--      <g-content class="demo">content</g-content>-->
+<!--      <g-footer class="demo">footer</g-footer>-->
+<!--    </g-layout>-->
+<!--  </g-layout>-->
+  <!--  <g-row style="border:1px solid red" align="center">-->
+  <!--    <g-col span="4" :narrow-pc="{span:12}" :ipad="{span:2}">-->
+  <!--      <div class="demo"></div>-->
+  <!--    </g-col>-->
+  <!--    <g-col span="10" :narrow-pc="{span:12}" :ipan="{span:22}">-->
+  <!--      <div class="demo"></div>-->
+  <!--    </g-col>-->
+  <!--  </g-row>-->
 </div>
 <script src="./src/app.js"></script>
 </body>

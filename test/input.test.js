@@ -3,6 +3,7 @@ import Button from "../src/button";
 const expect = chai.expect;
 import Vue from 'vue'
 import Input from '../src/input.vue'
+import Row from "../src/row";
 
 
 Vue.config.productionTip = false
@@ -18,6 +19,7 @@ describe('Input', () => {
     afterEach(() => {
       it('支持 change/input/focus/blur事件', () => {
         ['change', 'input', 'focus', 'blur'].forEach((eventName) => {
+          const Constructor  = Vue.extend(Row)
           vm = new Constructor({}).$mount
           const callback = sinon.fake();//fake（）间谍函数
           //触发input的change事件  sinon为外部库
