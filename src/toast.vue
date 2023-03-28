@@ -1,6 +1,6 @@
 <template>
   <div class="toast" :class="toastClasses">
-    <div v-if="!enableHtml" v-html="$slots.default[0]"></div>
+    <div v-if="!enableHtml" v-html="$slots.default[0]">222</div>
     <slot v-else ></slot>
     <div class="line"></div>
     <span v-if="closeButton" class="close" @click="onClickClose">{{closeButton.text}}</span>
@@ -83,7 +83,7 @@ $toast-bg:rgba(0,0,0,0.75);
   border-radius:4px;
   box-shadow:0px 0px 3px 0px rgba(0,0,0,0.50);
   padding: 0 16px;
-  &.position-top{position:fixed;top:0;left:50%; transform:translateX(-50%);}
+  &.position-top{position:fixed;top:8%;left:50%;transform:translateX(-50%);}
   &.position-bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);}
   &.position-middle{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);}
   .close{

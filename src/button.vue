@@ -56,7 +56,7 @@ $red: #F1453D;
   &:active { background-color: $button-active-bg; }
   &:focus { outline: none; }
   > .g-button-content { order: 2; }
-  > .icon { order: 1; margin-right: .1em; }
+  > .icon { width:1em; order: 1; margin-right: .1em;}
   &.icon-right {
     > .g-button-content { order: 1; }
     > .icon { order: 2; margin-right: 0; margin-left: .1em;}

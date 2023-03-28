@@ -6,9 +6,8 @@
     </p>
 
     <div>
-      <g-button @click="onClickButton">上方弹出</g-button>
+      <g-button @click="onClickButton">支持HTML</g-button>
     </div>
-
     <p>
       <strong>代码</strong>
     </p>
@@ -65,7 +64,7 @@
     },
     methods: {
       onClickButton () {
-        this.$toast('<strong style="color:red;">加粗的提示</strong>', {
+        this.$toast(`HTML的提示`, {
           enableHtml: true
         })
       }

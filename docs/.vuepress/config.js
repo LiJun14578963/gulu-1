@@ -1,13 +1,13 @@
 const path = require('path')
 module.exports = {
-  base: '/gulu/',
-  title: '轱辘UI',
+  base: '/gulu-1/',
+  title: 'LI-UI',
   description: '一个好用的UI框架',
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
       {text: '文档', link: '/guide/'},
-      {text: '交流', link: 'https://google.com'},
+      {text: '交流', link: 'https://github.com/LiJun14578963/'},
     ],
     sidebar: [
       {
@@ -29,10 +29,8 @@ module.exports = {
           '/components/layout',
           '/components/toast',
           '/components/popover',
-          '/components/slides',
         ]
       },
-
     ]
   },
   scss:{

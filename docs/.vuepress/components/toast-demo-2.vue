@@ -8,7 +8,6 @@
     <div>
       <g-button @click="onClickButton">上方弹出</g-button>
     </div>
-
     <p>
       <strong>代码</strong>
     </p>

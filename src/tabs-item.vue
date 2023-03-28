@@ -33,7 +33,6 @@ export default {
   },
   created() {
     this.eventBus.$on('update:selected', (name) => {
-      console.log('333');
       this.active = name === this.name
     })
   },
@@ -47,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue: blue;
+$blue: #2d8cf0;
 $disabled-text-color:grey;
 .tabs-item {
   display: flex;

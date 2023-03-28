@@ -16,7 +16,7 @@ export default {
   install(Vue, options) {
     Vue.prototype.$toast = function (message, toastOptions) {
       if(currentToast){currentToast.close()}
-      currentToast = currentToast({
+      currentToast = Constructor({
         Vue,
         message,
         propsData:toastOptions,
