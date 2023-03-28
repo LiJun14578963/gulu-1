@@ -72,11 +72,12 @@
   </style>
 </head>
 <body>
+
 <div id="app" style="padding-top: 50px;padding-left:50px;">
-  <g-collapse>
+  <g-collapse :single=false :selected.sync=selected>
     <g-collapse-item title="标题一" name="1">内容1</g-collapse-item>
-    <g-collapse-item title="标题二" name="1">内容1</g-collapse-item>
-    <g-collapse-item title="标题三" name="1">内容1</g-collapse-item>
+    <g-collapse-item title="标题二" name="2">内容2</g-collapse-item>
+    <g-collapse-item title="标题三" name="3">内容3</g-collapse-item>
   </g-collapse>
 <!--  <g-layout>-->
 <!--    <g-sider></g-sider>-->
