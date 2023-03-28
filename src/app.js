@@ -46,7 +46,6 @@ Vue.component('g-tabs-pane',TabsPane)
 Vue.component('g-popover',Popover)
 Vue.component('g-collapse', Collapse)
 Vue.component('g-collapse-item',CollapseItem)
-
 Vue.use(plugin)//执行引入的代码
 
 new Vue({
@@ -54,10 +53,17 @@ new Vue({
   data: {
     selectedTab:'sports',
     loading1: false,
-    message: 'hi'
+    message: 'hi',
+    selected:["2"]
+  },
+  mounted(){
+    this.$on('update:selected', (selected) =>{
+      console.log(222);
+      this.selected = selected
+    })
   },
   methods: {
-    yyy(){conwole.log('11')}
+
   },
   created(){
   }
